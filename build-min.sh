@@ -30,3 +30,12 @@ ttx -x TSI1 -x TSI3 -x TSI5 fonts/Roboto-min-VF.ttf
 rm fonts/Roboto-min-VF.ttf
 ttx fonts/Roboto-min-VF.ttx
 rm fonts/Roboto-min-VF.ttx
+
+#fix maxp
+ttx -m fonts/Roboto-min-VF.ttf fonts/maxp-fix.ttx
+ttx fonts/maxp-fix.ttf
+rm fonts/maxp-fix.ttf
+rm fonts/Roboto-min-VF.ttf
+ttx fonts/maxp-fix#1.ttx
+rm fonts/maxp-fix#1.ttx
+mv fonts/maxp-fix.ttf fonts/Roboto-min-VF.ttf
